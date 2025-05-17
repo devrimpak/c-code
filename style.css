@@ -1,0 +1,215 @@
+*
+
+{
+ margin:0;
+ padding: 0;
+ font-family: Arial, Helvetica, sans-serif;   
+}
+
+body {
+     overflow-x: hidden;
+    background: #262626 url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1470&q=80');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+form
+{
+    background: #272626ad;
+    padding: 40px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0  20px rgba(0, 0, 0, .8);
+    width: 300px;
+    height: 450px;
+}
+
+form h2
+{
+    font-size: 40px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+form input, form a, form button
+{
+    border: none;
+    background: none;
+    text-align: center;
+    outline: invert;
+    padding: 10px;
+    margin: 20px;
+    color: white;
+    height: 30px;
+    border-radius: 40px;
+    transition: 0.2s linear;
+}
+
+form input[type="text"], form input[type="number"], form a{
+    border:solid 2px #ffaf46;
+}
+
+form button{
+    border:solid 2px #a0fd54;
+    box-sizing: border-box;
+    height: 50px;
+}
+
+
+
+form input[type="text"]:focus, form input[type="number"]:focus{
+    width: 80%;
+    color:#e7ebe4;
+    border: solid 2px #d8cacaad;
+}
+
+form button:hover{
+    background: #a0fd54;
+}
+
+form select
+{
+    appearance: none;
+    box-shadow: 0;
+    background: none;
+    text-align: center;
+    outline: 0;
+    padding: 5px;
+    margin: 20px;
+    color: #ffffff;
+    height: 30px;
+    border-radius: 40px;
+    transition: 0.2s linear;
+    border:solid 2px #ffaf46;
+}
+form select:focus
+{
+    background: #272626a1;
+    width: 80%;
+    color:#ffffff;
+    border: solid 2px #d8cacaad;
+}
+
+
+.sag {
+    background: #272626ad;
+    padding: 40px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0  20px rgba(0, 0, 0, .8);
+    width: 300px;
+    height: 450px;
+    margin-left: 100px;
+}
+
+.sag p{
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+    margin-top: 30px;
+}
+.sag a{
+    font-size: 25px;
+    color: white;
+    margin-top: 60px;
+}
+
+.bilgiSatiri {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+  padding: 10px 15px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid #ffaf46;
+  border-radius: 20px;
+  font-size: 18px;
+  color: white;
+}
+
+.highlight {
+  color: #00ff4c;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.ayakizi {
+  margin-bottom: 20px;
+  margin-top: 25px;
+  padding: 10px 15px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 2px solid #00ff4c;
+  font-size: 24px;
+  text-align: center;
+  width: 100%;
+}
+
+.butonlar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.butonlar button {
+  flex: 1;
+  margin: 0 5px;
+  padding: 12px;
+  border-radius: 25px;
+  border: 2px solid #a0fd54;
+  background: transparent;
+  color: white;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.butonlar button:hover {
+  background: #a0fd54;
+  color: black;
+  cursor: pointer;
+}
+
+
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  form, .sag {
+    width: 90%;
+    height: auto;
+    margin: 10px 0;
+  }
+
+  form h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .bilgiSatiri {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+
+  .highlight {
+    font-size: 18px;
+  }
+
+  .butonlar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .butonlar button {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
